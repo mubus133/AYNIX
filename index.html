@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYNIX - Born from Love. Built for Power.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <svg class="logo-img" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 10 L90 70 L70 70 L50 40 L30 70 L10 70 Z" fill="white"/>
+                    <path d="M75 75 L90 95 L80 95 L75 87 L70 95 L60 95 Z" fill="white"/>
+                </svg>
+                AYNIX
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content" data-aos="fade-right">
+                    <h1 class="hero-title">Born from Love. Built for Power.</h1>
+                    <p class="hero-subtitle">Where innovation meets the fire of rebirth. Experience technology that's powerful, sleek, and full of life.</p>
+                    <div>
+                        <button class="btn btn-hero btn-hero-primary" onclick="scrollToSection('products')">
+                            <i class="fas fa-shopping-bag me-2"></i>Explore Products
+                        </button>
+                        <button class="btn btn-hero btn-hero-secondary" onclick="scrollToSection('services')">
+                            <i class="fas fa-tools me-2"></i>Our Services
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center mt-5 mt-lg-0" data-aos="fade-left">
+                    <i class="fas fa-mobile-alt" style="font-size: clamp(12rem, 28vw, 22rem); opacity: 0.15; color: white;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Carousel -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Collection</h2>
+            <p class="section-subtitle" data-aos="fade-up">Discover our premium selection</p>
+            <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex align-items-center justify-content-center h-100">
+                            <div class="text-center text-white p-5">
+                                <i class="fas fa-mobile-alt" style="font-size: clamp(3.5rem, 10vw, 5.5rem); margin-bottom: 1.5rem;"></i>
+                                <h3 style="font-size: clamp(1.5rem, 4.5vw, 2.2rem); font-weight: 700;">Premium Smartphones</h3>
+                                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem); margin-top: 1rem;">Latest flagship devices</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex align-items-center justify-content-center h-100">
+                            <div class="text-center text-white p-5">
+                                <i class="fas fa-headphones" style="font-size: clamp(3.5rem, 10vw, 5.5rem); margin-bottom: 1.5rem;"></i>
+                                <h3 style="font-size: clamp(1.5rem, 4.5vw, 2.2rem); font-weight: 700;">Authentic Accessories</h3>
+                                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem); margin-top: 1rem;">Original parts & gear</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex align-items-center justify-content-center h-100">
+                            <div class="text-center text-white p-5">
+                                <i class="fas fa-tools" style="font-size: clamp(3.5rem, 10vw, 5.5rem); margin-bottom: 1.5rem;"></i>
+                                <h3 style="font-size: clamp(1.5rem, 4.5vw, 2.2rem); font-weight: 700;">Expert Repairs</h3>
+                                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem); margin-top: 1rem;">Professional service guaranteed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Products</h2>
+            <p class="section-subtitle" data-aos="fade-up">Premium selection with lasting quality</p>
+            
+            <div class="text-center mb-5" data-aos="fade-up">
+                <button class="btn btn-outline-dark rounded-pill mx-2 mb-2 filter-btn active" data-filter="all">All Products</button>
+                <button class="btn btn-outline-dark rounded-pill mx-2 mb-2 filter-btn" data-filter="phones">Phones</button>
+                <button class="btn btn-outline-dark rounded-pill mx-2 mb-2 filter-btn" data-filter="accessories">Accessories</button>
+                <button class="btn btn-outline-dark rounded-pill mx-2 mb-2 filter-btn" data-filter="repair">Repair Tools</button>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 product-item" data-category="phones" data-aos="fade-up">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span class="product-badge">New</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">iPhone 15 Pro Max</h3>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <button class="btn-whatsapp" onclick="whatsappOrder('iPhone 15 Pro Max', '₦1,250,000')">
+                                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 product-item" data-category="phones" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #2d2d2d 0%, #000 100%);">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span class="product-badge">Hot</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Samsung Galaxy S24 Ultra</h3>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <button class="btn-whatsapp" onclick="whatsappOrder('Samsung Galaxy S24 Ultra', '₦980,000')">
+                                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 product-item" data-category="accessories" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #4a4a4a 0%, #1a1a1a 100%);">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">AirPods Pro 2</h3>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <button class="btn-whatsapp" onclick="whatsappOrder('AirPods Pro 2', '₦185,000')">
+                                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 product-item" data-category="accessories" data-aos="fade-up">
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #3d3d3d 0%, #0d0d0d 100%);">
+                            <i class="fas fa-battery-full"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Power Bank 20000mAh</h3>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="btn-whatsapp" onclick="whatsappOrder('Power Bank 20000mAh', '₦25,000')">
+                                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 product-item" data-category="accessories" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #2a2a2a 0%, #000 100%);">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Premium Phone Case</h3>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <button class="btn-whatsapp" onclick="whatsappOrder('Premium Phone Case', '₦8,500')">
+                                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 product-item" data-category="repair" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #404040 0%, #1a1a1a 100%);">
+                            <i class="fas fa-screwdriver"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Repair Tool Kit</h3>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <button class="btn-whatsapp" onclick="whatsappOrder('Repair Tool Kit', '₦15,000')">
+                                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0" data-aos="fade-up">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="10000">0</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="5000">0</div>
+                        <div class="stat-label">Successful Repairs</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="500">0</div>
+                        <div class="stat-label">Products Available</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="99">0</div>
+                        <div class="stat-label">Satisfaction Rate %</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+            <p class="section-subtitle" data-aos="fade-up">Professional care for your devices</p>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="service-title">Screen Replacement</h3>
+                        <p class="service-desc">Expert screen repair with original parts. Quick turnaround with warranty included.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-battery-full"></i>
+                        </div>
+                        <h3 class="service-title">Battery Replacement</h3>
+                        <p class="service-desc">Restore your phone's battery life with premium quality replacements.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3 class="service-title">Water Damage Repair</h3>
+                        <p class="service-desc">Advanced recovery service to save your device and precious data.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3 class="service-title">Software Repair</h3>
+                        <p class="service-desc">Fix software issues, remove viruses, and update operating systems.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="service-title">Device Protection</h3>
+                        <p class="service-desc">Screen protectors, cases, and insurance plans for your devices.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-unlock-alt"></i>
+                        </div>
+                        <h3 class="service-title">Phone Unlocking</h3>
+                        <p class="service-desc">Safe and legal unlocking services for all carriers and models.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="about-image">
+                        <div style="height: clamp(350px, 55vw, 450px); background: var(--primary-black); border-radius: 20px; display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 2rem;">
+                            <svg style="width: clamp(80px, 15vw, 120px); height: auto; margin-bottom: 2rem;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50 10 L90 70 L70 70 L50 40 L30 70 L10 70 Z" fill="white"/>
+                                <path d="M75 75 L90 95 L80 95 L75 87 L70 95 L60 95 Z" fill="white"/>
+                            </svg>
+                            <h2 style="color: white; font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 900; letter-spacing: 6px;">AYNIX</h2>
+                            <p style="color: var(--silver); font-size: clamp(0.9rem, 2vw, 1.1rem); margin-top: 1rem; text-align: center;">Born from Love. Built for Power.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h2 class="section-title text-start">About AYNIX</h2>
+                    <p class="mb-4" style="font-size: clamp(1rem, 2.2vw, 1.15rem); color: #666; line-height: 1.8;">
+                        Born from passion and power, AYNIX represents a new era of technology — where love for innovation meets the fire of rebirth.
+                    </p>
+                    <p class="mb-4" style="font-size: clamp(1rem, 2.2vw, 1.15rem); color: #666; line-height: 1.8;">
+                        Just like the Phoenix, we rise to redefine how people experience tech — powerful, sleek, and full of life.
+                        Every device, every accessory, and every gadget we offer carries one promise: lasting quality with purpose.
+                    </p>
+                    <p class="mb-4" style="font-size: clamp(1rem, 2.2vw, 1.15rem); color: #666; line-height: 1.8; font-weight: 600;">
+                        At AYNIX, we don't just sell tech — we build connection, confidence, and class through every product.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% Genuine Products Guaranteed</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Expert Technicians with Years of Experience</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>90-Day Warranty on All Repairs</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Competitive Pricing & Special Offers</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Same Day Service Available</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container text-center">
+            <h2 class="mb-3" style="font-size: clamp(2rem, 5.5vw, 2.8rem); font-weight: 700;" data-aos="fade-up">Stay Connected</h2>
+            <p class="mb-4" style="font-size: clamp(1rem, 2.5vw, 1.2rem);" data-aos="fade-up">Get exclusive deals and latest updates</p>
+            <div class="row justify-content-center" data-aos="fade-up">
+                <div class="col-lg-6 col-md-8">
+                    <div class="input-group">
+                        <input type="email" class="form-control newsletter-input" placeholder="Enter your email">
+                        <button class="btn newsletter-btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="section-subtitle" data-aos="fade-up">We'd love to hear from you</p>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="contact-info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4 style="font-size: clamp(1.1rem, 2.5vw, 1.3rem); margin-bottom: 0.8rem;">Visit Us</h4>
+                        <p style="font-size: clamp(0.95rem, 2vw, 1rem); margin: 0;">123 Technology Plaza<br>Lagos, Nigeria</p>
+                    </div>
+                    <div class="contact-info-card">
+                        <i class="fas fa-phone"></i>
+                        <h4 style="font-size: clamp(1.1rem, 2.5vw, 1.3rem); margin-bottom: 0.8rem;">Call Us</h4>
+                        <p style="font-size: clamp(0.95rem, 2vw, 1rem); margin: 0;"> +2349151579732 AYNIX</p>
+                    </div>
+                    <div class="contact-info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4 style="font-size: clamp(1.1rem, 2.5vw, 1.3rem); margin-bottom: 0.8rem;">Email Us</h4>
+                        <p style="font-size: clamp(0.95rem, 2vw, 1rem); margin: 0;">info@aynix.name.ng<br>support@aynix.name.ng</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-8" data-aos="fade-left">
+                    <form class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="tel" class="form-control" placeholder="Your Phone" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <select class="form-select">
+                                    <option selected>Select Service</option>
+                                    <option>Phone Repair</option>
+                                    <option>Buy Product</option>
+                                    <option>Partnership</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-lg rounded-pill px-5" style="font-size: clamp(0.95rem, 2vw, 1.05rem);">
+                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="mt-5" data-aos="fade-up">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7057213214805!2d3.4207524!3d6.4281135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjUnNDEuMiJOIDPCsDI1JzE0LjciRQ!5e0!3m2!1sen!2sng!4v1234567890" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0; border-radius: 20px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <svg style="width: 35px; height: auto; margin-right: 12px;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 10 L90 70 L70 70 L50 40 L30 70 L10 70 Z" fill="white"/>
+                            <path d="M75 75 L90 95 L80 95 L75 87 L70 95 L60 95 Z" fill="white"/>
+                        </svg>
+                        <h3 class="footer-logo mb-0">AYNIX</h3>
+                    </div>
+                    <p style="color: var(--silver); font-size: clamp(0.95rem, 2vw, 1rem); line-height: 1.7;">
+                        Born from love. Built for power. Your trusted partner for premium tech and professional services.
+                    </p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6 mb-4">
+                    <h5 class="mb-3" style="font-size: clamp(1.05rem, 2.3vw, 1.2rem);">Quick Links</h5>
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#products" class="footer-link">Products</a>
+                    <a href="#services" class="footer-link">Services</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mb-4">
+                    <h5 class="mb-3" style="font-size: clamp(1.05rem, 2.3vw, 1.2rem);">Services</h5>
+                    <a href="#" class="footer-link">Screen Repair</a>
+                    <a href="#" class="footer-link">Battery Replacement</a>
+                    <a href="#" class="footer-link">Water Damage</a>
+                    <a href="#" class="footer-link">Software Issues</a>
+                    <a href="#" class="footer-link">Phone Unlocking</a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-3" style="font-size: clamp(1.05rem, 2.3vw, 1.2rem);">Contact</h5>
+                    <p style="color: var(--silver); font-size: clamp(0.88rem, 1.9vw, 0.95rem); margin-bottom: 0.5rem;">
+                        <i class="fas fa-map-marker-alt me-2"></i>Abeokuta, Nigeria
+                    </p>
+                    <p style="color: var(--silver); font-size: clamp(0.88rem, 1.9vw, 0.95rem); margin-bottom: 0.5rem;">
+                        <i class="fas fa-phone me-2"></i>+234 9151579732 AYNIX
+                    </p>
+                    <p style="color: var(--silver); font-size: clamp(0.88rem, 1.9vw, 0.95rem); margin-bottom: 0;">
+                        <i class="fas fa-envelope me-2"></i>info@aynix.name.ng
+                    </p>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.1); margin: 2rem 0;">
+            <div class="text-center" style="color: var(--silver);">
+                <p class="mb-0" style="font-size: clamp(0.88rem, 1.9vw, 0.95rem);">&copy; 2025 AYNIX. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-toggle" id="chatbotToggle">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <h4>AYNIX Assistant</h4>
+            <button class="chatbot-close" id="chatbotClose">&times;</button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="chatbot-message bot">
+                Hi! I'm AYNIX Assistant. How can I help you today?
+                <div class="chatbot-options">
+                    <button class="chatbot-option-btn" onclick="askBot('services')">Our Services</button>
+                    <button class="chatbot-option-btn" onclick="askBot('contact')">Contact Info</button>
+                    <button class="chatbot-option-btn" onclick="askBot('products')">Products</button>
+                    <button class="chatbot-option-btn" onclick="askBot('whatsapp')">WhatsApp</button>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input-area">
+            <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Type your message...">
+            <button class="chatbot-send" id="chatbotSend">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
