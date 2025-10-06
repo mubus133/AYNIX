@@ -106,7 +106,7 @@
         function askBot(topic) {
             const responses = {
                 services: 'We offer:\n• Screen Replacement\n• Battery Replacement\n• Water Damage Repair\n• Software Repair\n• Device Protection\n• Phone Unlocking',
-                contact: 'Contact us:\n📍 123 Technology Plaza, Lagos\n📞 +234 800 AYNIX\n📧 info@aynix.com',
+                contact: 'Contact us:\n📍 23 AYNIX Plaza, Abeokuta\n📞 +234 2349151579732 AYNIX\n📧 info@aynix.com',
                 products: 'We sell premium smartphones, authentic accessories, and repair tools. All products come with warranty!',
                 whatsapp: 'Chat with us on WhatsApp: +234 9151579732 AYNIX\n\nClick below to start:',
                 hello: 'Hello! How can I assist you with AYNIX today?',
